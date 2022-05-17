@@ -1,0 +1,40 @@
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+nav {
+
+    background-color: darkgoldenrod;
+    margin-top: px;
+    height: 45px;
+    position: relative;
+    background-color: #787851;
+
+}
+
+button {
+    position: relative;
+    border: none;
+    font-size: 20px;
+    margin-top: 9px;
+    display: inline;
+    margin-left: 140px;
+}
+
+button:hover {
+    background-color: darkblue;
+    color: brown;
+}
+
+.float-btn {
+    float: right;
+    margin-left: 1px;
+
+}
+
+.float-btn2 {
+    float: right;
+    margin-left: 1px;
+
+}

@@ -1,0 +1,10 @@
+
+    td,
+    th {
+        border: solid;
+        padding: 15px;
+    }
+
+    table{
+        border-collapse: collapse;
+    }

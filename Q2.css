@@ -20,11 +20,13 @@ button {
     margin-top: 9px;
     display: inline;
     margin-left: 140px;
+    transition: all;
 }
 
 button:hover {
     background-color: darkblue;
     color: brown;
+    transform: rotate(360deg);
 }
 
 .float-btn {

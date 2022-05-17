@@ -7,20 +7,22 @@ nav {
 
     background-color: darkgoldenrod;
     margin-top: px;
-    height: 45px;
+    height: 53px;
     position: relative;
     background-color: #787851;
 
 }
 
 button {
-    position: relative;
-    border: none;
-    font-size: 20px;
-    margin-top: 9px;
-    display: inline;
-    margin-left: 140px;
-    transition: all;
+        position: relative;
+        border: none;
+        font-size: 20px;
+        margin-top: 9px;
+        display: inline;
+        margin-left: 71px;
+        transition: all;
+        border: inset;
+    
 }
 
 button:hover {
@@ -32,11 +34,12 @@ button:hover {
 .float-btn {
     float: right;
     margin-left: 1px;
+    margin-right: 20px;
 
 }
 
 .float-btn2 {
     float: right;
-    margin-left: 1px;
+    margin-right: 35px;
 
 }

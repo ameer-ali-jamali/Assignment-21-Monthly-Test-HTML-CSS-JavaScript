@@ -1,0 +1,33 @@
+<!Doctype html>
+<html>
+<body>
+   Product Name <input type="text" name="" id="prdt">
+   Product Brand <input type="text" name="" id="bndd">
+   <br>
+    <input id="price">Price
+    <br><br>
+    <input id="discount">%
+    <br><br>
+    <button onclick="getPrice()">
+Get total
+</button>
+    <br><br>
+    <input readonly id="total">
+    <script>
+        getPrice = function() {
+var nii = document.getElementById("prdt").value
+            var nuu=document.getElementById("bndd").value
+            var numVal1 = Number(document.getElementById("price").value);
+            var numVal2 = Number(document.getElementById("discount").value) / 100;
+            var totalValue = numVal1 - (numVal1 * numVal2)
+            document.getElementById("total").value = totalValue.toFixed(2);
+if(nii=="apple" || nuu=="Apple"){
+
+    discount=price*5/100;
+
+alert(discount)
+}
+        }
+    </script>
+</body>
+</html>

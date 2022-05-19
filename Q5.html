@@ -1,33 +1,94 @@
-<!Doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Q5.css">
+    <link rel="stylesheet" href="Q5__2nd.css">
+    <title>Document</title>
+
+</head>
 
 <body>
-    Product Name <input type="text" name="" id="prdt">
-    Product Brand <input type="text" name="" id="bndd">
-    <br>
-    <input id="price">Price
-    <br><br>
-    <input id="discount">%
-    <br><br>
-    <button onclick="getPrice()">
-        Get total
-    </button>
-    <br><br>
-    <input readonly id="total">
+    <div class="container">
+        Product Name <input type="text" name="" id="prdt">
+        Product Brand <input type="text" name="" id="bndd">
+        <br>
+        Price <input id="price">
+        <br><br>
+        <button class="btn-search" onclick="getPrice()">
+            Submit
+        </button>
+
+    </div>
     <script>
-        getPrice = function () {
-            var nii = document.getElementById("prdt").value
-            var nuu = document.getElementById("bndd").value
-            var numVal1 = Number(document.getElementById("price").value);
-            var numVal2 = Number(document.getElementById("discount").value) / 100;
-            var totalValue = numVal1 - (numVal1 * numVal2)
-            document.getElementById("total").value = totalValue.toFixed(2);
-            if (nii == "apple" || nuu == "Apple") {
+        function getPrice() {
+            let num111 = document.getElementById("prdt").value;
+            let num11 = document.getElementById("bndd").value;
+            let num1 = document.getElementById("price").value;
+            let p = num1 - (5 * num1) / 100;
+            let l = num1 - (10 * num1) / 100;
+            switch (num11) {
+                case "apple":
+                    document.write("  " + "Product Name = " + num111);
+                    document.write("<br>");
+                    document.write("Product Brand = " + num11);
+                    document.write("<br>")
+                    document.write("Price = " + num1);
+                    document.write("<br>");
+                    document.write("Disount 5%")
+                    document.write("<br>")
+                    document.write("<hr>")
+                    document.write("Total Price = " + p)
+                    break;
 
-                discount = price * 5 / 100;
+                case "Apple":
+                    document.write("Product Name = " + num111);
+                    document.write("<br>");
+                    document.write("Product Brand = " + num11);
+                    document.write("<br>")
+                    document.write("Price = " + num1);
+                    document.write("<br>");
+                    document.write("Disount 5%")
+                    document.write("<br>")
+                    document.write("<hr>")
+                    document.write("Total Price = " + p)
 
-                alert(discount)
+                    break;
+
+                case "samsung":
+                    document.write("  " + "Product Name = " + num111);
+                    document.write("<br>");
+                    document.write("Product Brand = " + num11);
+                    document.write("<br>")
+                    document.write("Price = " + num1);
+                    document.write("<br>");
+                    document.write("Disount   = 10% ")
+                    document.write("<br>")
+                    document.write("<hr>")
+                    document.write("Total Price = " + l)
+                    break;
+
+                case "Samsung":
+                    document.write("  " + "Product Name = " + num111);
+                    document.write("<br>");
+                    document.write("Product Brand = " + num11);
+                    document.write("<br>")
+                    document.write("Price = " + num1);
+                    document.write("<br>");
+                    document.write("Disount 10%")
+                    document.write("<br>")
+                    document.write("<hr>")
+                    document.write("Total Price = " + l)
+                    break;
+
+                default:
+                    alert("Please Input Right Details");
+                    break;
             }
+
         }
     </script>
 </body>

@@ -1,0 +1,28 @@
+.container {
+    text-align: center;
+    margin-top: 54px;
+    font-size: 37px;
+}
+
+.btn-search {
+    font-size: 32px;
+
+}
+
+input {
+    width: 20%;
+    height: 40px;
+    font-size: 22px;
+    margin-top: 30px;
+}
+
+.btn-search:hover {
+    background-color: rgb(16, 16, 148);
+    font-size: 42px;
+    width: 266px;
+
+}
+
+body {
+    background: lightgreen;
+}

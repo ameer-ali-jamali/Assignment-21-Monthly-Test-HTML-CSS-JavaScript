@@ -25,12 +25,12 @@
     </div>
     <script>
         function getPrice() {
-            let num111 = document.getElementById("prdt").value;
-            let num11 = document.getElementById("bndd").value;
-            let num1 = document.getElementById("price").value;
-            let p = num1 - (5 * num1) / 100;
-            let l = num1 - (10 * num1) / 100;
-            switch (num11) {
+            let productname = document.getElementById("prdt").value;
+            let productbrand = document.getElementById("bndd").value;
+            let price = document.getElementById("price").value;
+            let p = price - (5 * price) / 100;
+            let l = price - (10 * price) / 100;
+            switch (productbrand) {
                 case "apple":
                     document.write("  " + "Product Name = " + num111);
                     document.write("<br>");

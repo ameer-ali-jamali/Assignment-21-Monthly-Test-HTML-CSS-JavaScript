@@ -6,15 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Q5.css">
-    <link rel="stylesheet" href="Q5__2nd.css">
     <title>Document</title>
 
 </head>
 
 <body>
     <div class="container">
-        Product Name <input type="text" name="" id="prdt">
-        Product Brand <input type="text" name="" id="bndd">
+        Product Name <input type="text" name="" id="prdtname">
+        Product Brand <input type="text" name="" id="prdtbrand">
         <br>
         Price <input id="price">
         <br><br>
@@ -25,14 +24,14 @@
     </div>
     <script>
         function getPrice() {
-            let productname = document.getElementById("prdt").value;
-            let productbrand = document.getElementById("bndd").value;
+            let productname = document.getElementById("prdtname").value;
+            let productbrand = document.getElementById("prdtbrand").value;
             let price = document.getElementById("price").value;
             let p = price - (5 * price) / 100;
             let l = price - (10 * price) / 100;
-            document.write(5*(5+1)/2)
-            switch (productbrand) {
-                case "apple":
+            switch (productbrand.toUpperCase()) {
+
+                case "APPLE":
                     document.write("  " + "Product Name = " + productname);
                     document.write("<br>");
                     document.write("Product Brand = " + productbrand);
@@ -45,34 +44,8 @@
                     document.write("Total Price = " + p)
                     break;
 
-                case "Apple":                
-                    document.write("  " + "Product Name = " + productname);
-                    document.write("<br>");
-                    document.write("Product Brand = " + productbrand);
-                    document.write("<br>")
-                    document.write("Price = " + price);
-                    document.write("<br>");
-                    document.write("Disount 5%")
-                    document.write("<br>")
-                    document.write("<hr>")
-                    document.write("Total Price = " + p)
-                    break;
+                case "SAMSUNG":
 
-                case "samsung":
-                    
-                document.write("  " + "Product Name = " + productname);
-                    document.write("<br>");
-                    document.write("Product Brand = " + productbrand);
-                    document.write("<br>")
-                    document.write("Price = " + price);
-                    document.write("<br>");
-                    document.write("Disount 10%")
-                    document.write("<br>")
-                    document.write("<hr>")
-                    document.write("Total Price = " + l)
-                    break;
-
-                case "Samsung":
                     document.write("  " + "Product Name = " + productname);
                     document.write("<br>");
                     document.write("Product Brand = " + productbrand);
@@ -84,7 +57,6 @@
                     document.write("<hr>")
                     document.write("Total Price = " + l)
                     break;
-
                 default:
                     alert("Please Input Right Details");
                     break;
